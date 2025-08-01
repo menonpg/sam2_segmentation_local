@@ -1,0 +1,36 @@
+# SAM2 Interactive Segmentation App - Exact Working Versions
+# Tested on macOS with Apple Silicon (M1-M3) and Python 3.13
+
+# Core Streamlit (MUST use this version for drawable canvas compatibility)
+streamlit==1.28.0
+streamlit-drawable-canvas>=0.9.0
+
+# PyTorch for Apple Silicon - automatically detects MPS
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Computer Vision and ML
+opencv-python>=4.8.0
+pillow>=10.0.0,<11.0.0
+numpy>=1.26.0,<2.0.0
+supervision>=0.16.0
+
+# Transformers and HuggingFace (for Florence2 integration)
+transformers>=4.35.0
+tokenizers>=0.15.0
+accelerate>=0.20.0
+sentencepiece>=0.1.99
+huggingface-hub>=0.16.0
+
+# Additional utilities
+tqdm>=4.64.0
+requests>=2.28.0
+
+# Optional but recommended
+# For better performance monitoring
+# psutil>=5.9.0
+
+# Note: For CUDA systems, install PyTorch with CUDA support:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+# Note: SAM2 itself will be installed separately via git clone
